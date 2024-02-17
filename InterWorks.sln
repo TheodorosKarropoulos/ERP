@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterWorks.Discounts", "src/InterWorks.Discounts.csproj", "{106A41E8-38EC-402B-A059-12D62ECE6C2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterWorks.Discounts", "src\InterWorks.Discounts\InterWorks.Discounts.csproj", "{106A41E8-38EC-402B-A059-12D62ECE6C2E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterWorks.Discounts.UnitTests", "tests\InterWorks.Discounts.UnitTests\InterWorks.Discounts.UnitTests.csproj", "{B82789B8-5D1B-4579-A0D7-B734F8E258CE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3DFAFB16-C49D-40D9-8266-7B019C881D72}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{60BD01A2-FF48-47EA-912F-5D77909AF1E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterWorks.DynamicFields", "src\InterWorks.DynamicFields\InterWorks.DynamicFields.csproj", "{72B83AF1-C5FB-4576-BA36-561C489A5E8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterWorks.DynamicFields.UnitTests", "tests\InterWorks.DynamicFields.UnitTests\InterWorks.DynamicFields.UnitTests.csproj", "{6DFA91BF-9107-480F-B626-2BB0EFD96671}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,14 @@ Global
 		{B82789B8-5D1B-4579-A0D7-B734F8E258CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B82789B8-5D1B-4579-A0D7-B734F8E258CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B82789B8-5D1B-4579-A0D7-B734F8E258CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72B83AF1-C5FB-4576-BA36-561C489A5E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B83AF1-C5FB-4576-BA36-561C489A5E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B83AF1-C5FB-4576-BA36-561C489A5E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B83AF1-C5FB-4576-BA36-561C489A5E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DFA91BF-9107-480F-B626-2BB0EFD96671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DFA91BF-9107-480F-B626-2BB0EFD96671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DFA91BF-9107-480F-B626-2BB0EFD96671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DFA91BF-9107-480F-B626-2BB0EFD96671}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,5 +47,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B82789B8-5D1B-4579-A0D7-B734F8E258CE} = {3DFAFB16-C49D-40D9-8266-7B019C881D72}
 		{106A41E8-38EC-402B-A059-12D62ECE6C2E} = {60BD01A2-FF48-47EA-912F-5D77909AF1E3}
+		{72B83AF1-C5FB-4576-BA36-561C489A5E8F} = {60BD01A2-FF48-47EA-912F-5D77909AF1E3}
+		{6DFA91BF-9107-480F-B626-2BB0EFD96671} = {3DFAFB16-C49D-40D9-8266-7B019C881D72}
 	EndGlobalSection
 EndGlobal

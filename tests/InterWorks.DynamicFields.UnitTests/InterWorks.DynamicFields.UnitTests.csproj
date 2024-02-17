@@ -7,7 +7,7 @@
 
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
-        <RootNamespace>InterWorks.Discounts.Tests</RootNamespace>
+        <RootNamespace>InterWorks.DynamicFields</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -22,7 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\InterWorks.Discounts\InterWorks.Discounts.csproj" />
+      <ProjectReference Include="..\..\src\InterWorks.DynamicFields\InterWorks.DynamicFields.csproj" />
     </ItemGroup>
 
 </Project>
