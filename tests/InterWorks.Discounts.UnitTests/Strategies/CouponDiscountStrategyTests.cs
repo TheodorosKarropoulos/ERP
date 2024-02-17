@@ -1,6 +1,6 @@
 ﻿using InterWorks.Discounts.Strategies;
 
-namespace InterWorks.Discounts.Tests;
+namespace InterWorks.Discounts.Tests.Strategies;
 
 public class CouponDiscountStrategyTests
 {

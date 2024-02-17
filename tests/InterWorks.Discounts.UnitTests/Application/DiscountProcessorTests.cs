@@ -1,8 +1,9 @@
+using InterWorks.Discounts.Applications;
 using InterWorks.Discounts.Constants;
 using InterWorks.Discounts.Models;
 using InterWorks.Discounts.Strategies;
 
-namespace InterWorks.Discounts.Tests;
+namespace InterWorks.Discounts.Tests.Application;
 
 public class DiscountProcessorTests
 {

@@ -1,17 +1,17 @@
 ﻿using InterWorks.Discounts.Strategies;
 
-namespace InterWorks.Discounts.Tests;
+namespace InterWorks.Discounts.Tests.Strategies;
 
-public class PromotionDiscountStrategyTests
+public class PriceListDiscountStrategyTests
 {
     [Fact]
     public void CalculateDiscount_ReturnsZero_WhenAmountIsZero()
     {
         // Arrange
-        var promotionDiscountStrategy = new PromotionDiscountStrategy(10);
+        var priceListStrategy = new PriceListDiscountStrategy(10);
         
         // Act
-        var discount = promotionDiscountStrategy.CalculateDiscount(0);
+        var discount = priceListStrategy.CalculateDiscount(0);
         
         // Assert
         Assert.Equal(0, discount);
@@ -21,10 +21,10 @@ public class PromotionDiscountStrategyTests
     public void CalculateDiscount_ReturnsCorrectDiscount_WhenAmountAndDiscountAreValid()
     {
         // Arrange
-        var promotionDiscountStrategy = new PromotionDiscountStrategy(10);
+        var priceListStrategy = new PriceListDiscountStrategy(10);
         
         // Act
-        var discount = promotionDiscountStrategy.CalculateDiscount(100);
+        var discount = priceListStrategy.CalculateDiscount(100);
 
         // Assert
         Assert.Equal(10, discount);
@@ -34,10 +34,10 @@ public class PromotionDiscountStrategyTests
     public void CalculateDiscount_ReturnsCorrectDiscount_WhenDiscountIsZero()
     {
         // Arrange
-        var promotionDiscountStrategy = new PromotionDiscountStrategy(0);
+        var priceListStrategy = new PriceListDiscountStrategy(0);
         
         // Act
-        var discount = promotionDiscountStrategy.CalculateDiscount(100);
+        var discount = priceListStrategy.CalculateDiscount(100);
         
         // Assert
         Assert.Equal(0, discount);
@@ -47,10 +47,10 @@ public class PromotionDiscountStrategyTests
     public void CalculateDiscount_ReturnsZero_WhenAmountIsNegative()
     {
         // Arrange
-        var promotionDiscountStrategy = new PromotionDiscountStrategy(10);
+        var priceListStrategy = new PriceListDiscountStrategy(10);
         
         // Act
-        var discount = promotionDiscountStrategy.CalculateDiscount(-100);
+        var discount = priceListStrategy.CalculateDiscount(-100);
         
         // Assert
         Assert.Equal(0, discount);
@@ -60,10 +60,10 @@ public class PromotionDiscountStrategyTests
     public void CalculateDiscount_ReturnsZero_WhenDiscountIsNegative()
     {
         // Arrange
-        var promotionDiscountStrategy = new PromotionDiscountStrategy(-10);
+        var priceListStrategy = new PriceListDiscountStrategy(-10);
         
         // Act
-        var discount = promotionDiscountStrategy.CalculateDiscount(100);
+        var discount = priceListStrategy.CalculateDiscount(100);
         
         // Assert
         Assert.Equal(0, discount);

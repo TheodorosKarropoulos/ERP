@@ -1,7 +1,7 @@
 ﻿using InterWorks.Discounts.Constants;
 using InterWorks.Discounts.Models;
 
-namespace InterWorks.Discounts;
+namespace InterWorks.Discounts.Applications;
 
 public class DiscountProcessor : IDiscountProcessor
 {
