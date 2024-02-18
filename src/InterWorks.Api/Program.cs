@@ -25,6 +25,7 @@ app.UseHttpsRedirection();
 
 app.AddCustomerEndpoints();
 app.AddCustomerFieldEndpoints();
+app.AddCustomerFieldHistoryEndpoints();
 
 app.Run();
 
