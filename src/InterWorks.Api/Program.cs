@@ -1,5 +1,6 @@
 using InterWorks.Api.Extensions;
 using InterWorks.Api.Modules;
+using InterWorks.Discounts.Applications;
 using InterWorks.DynamicFields.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddApiDependencies();
 builder.Services.AddDynamicFieldsDependencies();
+builder.Services.AddScoped<IDiscountProcessor, DiscountProcessor>();
 
 var app = builder.Build();
 
@@ -25,6 +27,8 @@ app.UseHttpsRedirection();
 
 app.AddCustomerEndpoints();
 app.AddCustomerFieldEndpoints();
+app.AddCustomerFieldHistoryEndpoints();
+app.AddDiscountEndpoints();
 
 app.Run();
 
