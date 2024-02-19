@@ -33,7 +33,7 @@ public class DiscountProcessor : IDiscountProcessor
                 continue;
             }
             
-            var discountStrategy = order.Discounts
+            var discountStrategy = order.Discounts?
                 .FirstOrDefault(x => x.Name == discountType);
             
             if (discountStrategy is null)

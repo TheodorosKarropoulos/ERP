@@ -17,8 +17,6 @@ public static class CustomerModule
             {
                 var customer = mapper.Map<CreateCustomer, Customer>(request);
                 await service.CreateAsync(customer);
-
-                return Results.Ok(customer.Id);
             });
 
         app.MapPut("/customer",
